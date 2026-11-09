@@ -15,6 +15,5 @@ Setup, commands, file layout and code changes: see `REPLICATION.md`. Tests: `cd 
 | Mixed (e) vs binary splits | e claimed optimal | within 0.01 on 21 of 24 files |
 
 Environment used for the new runs: Python 3.13, NumPy 2.5, scikit-learn 1.9, 2 cores (see `requirements.txt`).
-The `USERNAME` placeholder in the report's repository link must be replaced with the real GitHub account.
 
 Credit Card files and anything derived from them are not in this repository (redistribution terms unconfirmed); scripts regenerate them from your own download. Same-seed OptIForest runs are not exactly repeatable (observed on the real-rate sample), so expect small differences.
