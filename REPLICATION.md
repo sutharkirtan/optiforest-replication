@@ -52,3 +52,11 @@ Result files: `results_v2_grid_ad.json`, `results_v2_grid_cc.json` (per-run valu
 cd tests && PYTHONPATH=.. python -m pytest -q .
 ```
 13 of 14 pass. `TestHierHash::test_get_hash_value` fails because the test builds a 1556-dimensional input for a 1555-dimensional model (a defect in the test).
+
+## LLM-as-judge check
+```
+python scripts/build_judge_inputs.py OUTDIR 7     # blinded input + key (needs data/v2/cc_*.csv)
+# give OUTDIR/judge_input.json to a fresh LLM judge (prompt in the report appendix); save its output as OUTDIR/judge_output.json
+python scripts/score_judge.py OUTDIR              # writes results_llm_judge.json
+```
+Our run: `judge/judge_key.json`, `judge/judge_output.json`, `results_llm_judge.json`.

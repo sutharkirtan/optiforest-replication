@@ -5,5 +5,3 @@ data/creditcard.csv
 creditcard.csv
 data/existing/
 !data/v2/manifest.csv
-
-.pytest_cache/
