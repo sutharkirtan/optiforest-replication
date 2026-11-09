@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+data/v2/*.csv
+data/creditcard.csv
+creditcard.csv
+data/existing/
+!data/v2/manifest.csv
+
+.pytest_cache/
